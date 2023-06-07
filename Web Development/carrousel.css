@@ -4,10 +4,13 @@
     top: -3em;
     left: calc(50% - 300px);
     display: flex;
+
   }
   
   .card {
     display: flex;
+
+
     height: 400px;
     width: 300px;
     background-color: #17141d;

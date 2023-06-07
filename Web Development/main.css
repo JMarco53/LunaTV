@@ -9,11 +9,12 @@ body{
     background-color: black;
 }
 .container{
-    margin: 0 188px;
+    margin: 0 5%;
     position: relative;
     z-index: 1;
     top:50%;
     transform: translate(0,-90vh);
+    width: 100%;
 }
 .bg-img{
     width: 100%;
@@ -34,9 +35,6 @@ body{
     z-index: 0;
 }
 
-
-
-
 .navbar-container {
     display: flex;
     justify-content: space-between;
@@ -45,21 +43,22 @@ body{
     font-size: 24px;
     max-height: fit-content;
     height: 150px;
-
 }
+
 .nav-menu {
     display: flex;
     height: auto;
 }
 
 .nav-menu a {
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 0 10px;
-color: white;
-text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    color: white;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
+
 .user-interaction{
     display: flex;
     align-items: center;
@@ -68,7 +67,7 @@ text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 
 .nav-menu a.active {
-font-weight: bold;
+    font-weight: bold;
 }
 
 .nav-menu a:hover {
@@ -82,8 +81,10 @@ font-weight: bold;
 }
 
 .hero-box{
+    position:relative;
     padding-top: 15rem;
     z-index: 2;
+    top: 20%;
 }
 h1 {
     font-size: 70px;
@@ -102,12 +103,14 @@ h1 {
     color: white;
     margin: 3em 0;
 }
+
 .cta-btn {
     text-decoration: none;
     margin-right: 1em;
     text-align: center;
     text-transform: uppercase;
 }
+
 .watch{
     color: white;
     background-color: #00CDFF;
@@ -117,6 +120,7 @@ h1 {
     box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
     z-index: 3;
 }
+
 .detail{
     color: black;
     background-color: #ffffff;
@@ -184,3 +188,247 @@ h1 {
     rotate: 55deg;
     z-index: -10;
 }
+css
+Copy code
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    font-family: "Poppins";
+    color: white;
+    background-color: black;
+}
+.container{
+    margin: 0 5%;
+    position: relative;
+    z-index: 1;
+    top:50%;
+    transform: translate(0,-90vh);
+}
+.bg-img{
+    width: 100%;
+    height: 90vh;
+    background-image: url("chainsaw-man-manga.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+.bg-img::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 200%);
+    z-index: 0;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;  
+    align-items: center;
+    font-size: 24px;
+    max-height: fit-content;
+    height: 150px;
+}
+
+.nav-menu {
+    display: flex;
+    height: auto;
+}
+
+.nav-menu a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    color: white;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.user-interaction{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.nav-menu a.active {
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    color: #00CDFF;
+    font-weight: bold;
+}
+
+.logo {
+    padding-top: 5px; 
+    -webkit-transition: all 0.3s ease-out;
+}
+
+.hero-box{
+    position:relative;
+    padding-top: 15rem;
+    z-index: 2;
+    top: 20%;
+}
+h1 {
+    font-size: 70px;
+    margin: 5px 0;
+    font-weight: bolder;
+    width: auto;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.hero-desc{
+    width: 60%;
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+.hero-btns {
+    text-decoration: none;
+    color: white;
+    margin: 3em 0;
+}
+
+.cta-btn {
+    text-decoration: none;
+    margin-right: 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.watch{
+    color: white;
+    background-color: #00CDFF;
+    padding: 20px 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+    z-index: 3;
+}
+
+.detail{
+    color: black;
+    background-color: #ffffff;
+    padding: 20px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+}
+.dropdown-menu{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .dropdown-menu {
+        display: grid;
+        color: white;
+        text-decoration: none;
+    }
+    .dropdown-menu a{
+        color: white;
+        text-align: end;
+    }
+    .container{
+        margin: 0 5%;
+    }
+    .hero-box{
+        padding-top: 10rem;
+    }
+    .hero-desc{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container{
+        margin: 0 3%;
+    }
+    .navbar-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .nav-menu a {
+        padding: 10px;
+    }
+    .user-interaction {
+        justify-content: center;
+    }
+    .logo {
+        width: 80%;
+        height: auto;
+    }
+    .hero-box{
+        padding-top: 5rem;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    .hero-desc{
+        width: 90%;
+        font-size: 16px;
+    }
+    .cta-btn {
+        padding: 15px 25px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    /* hide the links and show the hamburger menu */
+    .container{
+        width: 100%;
+    }
+    .bg-img{
+        width: 100%;
+    }
+    .nav-menu a {
+      display: none;
+    }
+  
+    .hamburger-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 24px;
+      width: 30px;
+      cursor: pointer;
+      margin-right: 20px;
+    }
+  
+    .line {
+      width: 100%;
+      height: 2px;
+      background-color: black;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* adjust the font sizes and padding */
+    .navbar-container {
+      font-size: 14px;
+    }
+  
+    .hamburger-menu {
+      height: 20px;
+      width: 25px;
+      margin-right: 10px;
+    }
+  
+    .line {
+      height: 1px;
+    }
+  }
