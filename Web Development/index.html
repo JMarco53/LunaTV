@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LunaTv</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="carrousel.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -15,38 +17,68 @@
 </head>
 <body>
     <div class="bg-img"></div>
-    <section id="hero">
-        <div class="container">
-          <nav class="navbar">
-            <div class="navbar-container">
-              <div class="nav-menu">
-                <a href="#"><img src="LunaLogo.png" alt="LunaTv" class="logo" width="248" height="240"></a>
-                <a href="#" class="active">Home</a>
-                <a href="#">New Release</a>
-                <a href="#">Categories</a>
-                <a href="#">Most Poplular</a>
-              </div>
-              <div class="user-interaction">
-                <a href="#"><img src="search_icon.svg" alt="search" width="50" height="50"></a>
-                <a href="#"><img src="user_logo.png" alt="user" width="120" height="120"></a>
+    <div class="container">
+        <section id="hero">
+            <nav class="navbar">
+                <div class="navbar-container">
+                <div class="nav-menu">
+                    <a href="#"><img src="LunaLogo.png" alt="LunaTv" class="logo" width="248" height="240"></a>
+                    <a href="#" class="active">Home</a>
+                    <a href="#">New Release</a>
+                    <a href="#">Categories</a>
+                    <a href="#">Most Poplular</a>
+                </div>
+                <div class="user-interaction">
+                    <a href="#"><img src="search_icon.svg" alt="search" width="50" height="50"></a>
+                    <a href="#"><img src="user_logo.png" alt="user" width="120" height="120"></a>
+                </div>
+                </div>
+            </nav>
+            <div class="hero-box">
+                <h1 class="anime-title">Chainsaw Man</h1>
+                <p class="hero-desc">Chainsaw Man follows the story of Denji, 
+                an impoverished young man who makes a contract that fuses his body with that 
+                of a dog-like devil named Pochita, granting him the ability to transform parts 
+                of his body into chainsaws. Denji eventually joins the Public Safety Devil Hunters, 
+                a government agency focused on fighting against devils whenever they become a threat to Japan.
+                </p>
+                <div class="hero-btns">
+                <a href="#" class="cta-btn watch">Watch Now</a>
+                <a href="#" class="cta-btn detail">Detail</a>
+                </div>
             </div>
+        </section>
+        <div class="trending">
+            <h2 class="trend-title">Trending</h2>
+            <div class="collection-container">
+                <div class="card">
+                    <a href="#"><img src="/Web Development/Content/one-piece.jpg" alt=""></a>
+                    <div class="anime-info">
+                        <h3>One Piece</h3>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <a href="#"><img src="/Web Development/Content/pokemon.jpg" alt=""></a>
+                    <div class="anime-info">
+                        <h3>Pokemon Movie</h3>
+                    </div>
+                </div>
+                  <div class="card">
+                    <a href="#"><img src="/Web Development/Content/spy-family.webp" alt=""></a>
+                    <div class="anime-info">
+                        <h3>Spy X Family</h3>
+                    </div>
+                </div>
+                  <div class="card">
+                    <a href="#"><img src="/Web Development/Content/a_silent_voice.jpg" alt=""></a>
+                    <div class="anime-info">
+                        <h3>A Silent Voice: Movie</h3>
+                    </div>
+                </div>
             </div>
-          </nav>
-          <div class="hero-box">
-            <h1 class="anime-title">Chainsaw Man</h1>
-            <p class="hero-desc">Chainsaw Man follows the story of Denji, 
-              an impoverished young man who makes a contract that fuses his body with that 
-              of a dog-like devil named Pochita, granting him the ability to transform parts 
-              of his body into chainsaws. Denji eventually joins the Public Safety Devil Hunters, 
-              a government agency focused on fighting against devils whenever they become a threat to Japan.
-            </p>
-            <div class="hero-btns">
-              <a href="#" class="cta-btn watch">Watch Now</a>
-              <a href="#" class="cta-btn detail">Detail</a>
-            </div>
-          </div>
         </div>
-      </section>
-      <h1>Trending</h1>
+            
+    </div>
+    
 </body>
 </html>
