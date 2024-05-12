@@ -23,7 +23,8 @@
         "favorite": "Add to favorite",
         "signup": "Sign Up",
         "password": "Password",
-        "forgot": "Forgot Password?"
+        "forgot": "Forgot Password?",
+        "backToTop": "Back to top"
     },
     "contentPage": {
         "creator": "Creator",

@@ -62,7 +62,7 @@ const Main = () => {
                       <span className="icon-text">{t('other.fullCatalogue')}</span>
                       </a>
                       <br />
-                      <a href="#hero" class="text-light mt-2">Back to top</a>
+                      <a href="#hero" class="text-light mt-2">{t('other.backToTop')}</a>
                   </div>
               </div>
               </>

@@ -54,7 +54,7 @@ const ContentPage = () => {
                 <span className="icon-text">{t('other.fullCatalogue')}</span>
                 </a>
                 <br />
-                <a href="#play-button" class="text-light mt-2">Back to top</a>
+                <a href="#play-button" class="text-light mt-2">{t('other.backToTop')}</a>
             </div>
         </div>
     </div>

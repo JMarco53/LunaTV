@@ -23,7 +23,8 @@
         "favorite": "Ajouter aux préférés",
         "signup": "Créer un compte",
         "password": "Mot de passe",
-        "forgot": "Oublié le mot de passe?"
+        "forgot": "Oublié le mot de passe?",
+        "backToTop": "Haut de la page"
     },
     "contentPage": {
         "creator": "Créateur",
